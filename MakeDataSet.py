@@ -15,7 +15,6 @@ import itertools
 # Carga los modelos
 MOD = open("modelstest.txt", "r")
 DS = open("dataset.txt", "w")
-f = open("nomassive.txt","w")
 
 # Estados no masivos
 
@@ -100,6 +99,7 @@ conta = 1
 
 # las WL identicas son 1-2 y 5-6.
 for model in MOD:
+    print(conta)
     Ns = []
     V1 = sp.Matrix(list(map(sp.Rational, model[2:-3].split(
         "], [")[0].split(","))))
